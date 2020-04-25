@@ -1,0 +1,21 @@
+body{
+	background-color: lightgrey; 
+}
+h1{
+	font-size: 30px; 
+	color: salmon;
+}
+
+h2{
+	color: red; 
+	f
+	ont-size: 20px; 
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+span{
+	color: violet; 
+}
