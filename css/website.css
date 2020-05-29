@@ -1,0 +1,322 @@
+body{
+	margin: 0;
+	/*font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;*/
+	/*font-family: "San Francisco", "Helvetica Neue", sans-serif;*/
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px; 
+	line-height: 35px; 
+	/*color: #757575; */
+}
+
+/*CREATING A NAVIGATION BAR*/
+.topnav { 
+	z-index: 9999; 
+  width: 100%;
+  /*height: 15px;*/
+  background-color: #333;
+  overflow: hidden;
+  text-align: center; 
+  opacity: 0.85;
+  position: fixed; 
+  display: table;  
+  padding-top: 7px; 
+  padding-bottom: 7px; 
+}
+
+/* Style the links inside the navigation bar */
+.topnav a { 
+  /*display: table-cell;*/
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  vertical-align: center; 
+  padding: 30px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white; 
+  color: #3498db;
+}
+
+/* Add a color to the active/current link */
+.topnav a:active {
+  background-color: #3498db;
+  color: white;
+}
+
+.topnav a:target {
+  background-color: #3498db;
+  color: white;
+}
+
+header {
+	/*background-color: #1560FB; */
+	text-align: center; 
+}
+
+header img {
+	width: 100%; 
+	height: 100%; 
+	/*border-radius: 150px; */
+	/*border: 5px solid #1560FB; */
+}
+
+.centered{
+	position: absolute;
+	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+}
+
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+   }
+
+.container .bttn{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-10%, -50%);*/
+  background-color: #f7f7f7;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  /*border-radius: 5px;*/
+}
+
+.container .bttn:hover {
+  background-color: white;
+  color: #3498db;
+}
+
+.bttn-2{
+	/*position: absolute;*/
+	background-color: #f7f7f7;
+	color: white;
+}
+
+.sectionheader {
+    text-align: center;
+}
+
+/*name welcome page header*/
+header h1{
+	/*font-family: "San Francisco", "Helvetica Neue", sans-serif;*/
+	/*font-family: 'Oxygen', sans-serif;*/
+	font-size: 70px; 
+	color: white;
+	padding-top: 0px; 
+	padding-bottom: 25px; 
+}
+
+main {
+	max-width: 1100px; 
+	text-align: center;
+	margin: 0 auto; 
+	/*padding: 20px; */
+}
+
+main img {
+	max-width: 100%; 
+	width: 225px; 
+	height: 225px; 
+	border-radius: 150px; 
+	border: 5px solid #333; 
+	float:left;
+	position: relative;
+	margin: 0 20px 20px 0;
+}
+
+/*header of each section*/
+.sectiontitle{
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #555;
+    text-transform: uppercase;
+    /*line-height: 25px;*/
+    /*padding: 20px 0;*/
+}
+
+/*Vanderbilt and McD headings*/
+h4{
+	color: #555; 
+	font-size: 30px; 
+	margin: 10px; 
+}
+
+/*blue headings*/
+h5{
+	color: #3498db; 
+	font-size: 22px; 
+	margin-left: 0px; 
+	margin-right: 0px; 
+	margin-bottom: 10px; 
+	margin-top: 10px;  
+	letter-spacing: 1px; 
+}
+
+p{
+	font-size: 20px; 
+	line-height: 25px; 
+	letter-spacing: 1px; 
+	color: #757575;
+	margin: 0; 
+	/*font-family: 'News Cycle', sans-serif;*/
+	font-family: 'Gupter', serif;
+}
+a{
+	color: #3498db;
+}
+
+a:hover{
+	color: black;
+}
+
+div{
+/*	border-width: 1px; 
+	border-color: black; 
+	border-style: dashed; */
+}
+
+.spacer{
+	background: #3498db;
+	width: 100px;
+    height: 2px;
+    margin: auto;
+}
+
+.wide{
+	background: #f7f7f7;
+	margin: 0 -500%;
+	padding: 25px 500% 50px 500% !important;
+}
+
+.leftside, .rightside{
+	height: 100vh; 
+	width: 100%;
+
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.col-1 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.col-2 {
+  float: left;
+  width: 70%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#info{
+	vertical-align: middle; 
+	text-align: left;
+}
+
+#picture{
+	padding-right: 40px; 
+}
+
+#picture, #info{
+	display: inline;
+}
+#page-about{
+	/*height: 70vh;*/ 
+	padding-bottom: 25px; 
+	padding-top: 25px; 
+}
+#page-skills{
+	/*background: #f7f7f7;*/
+/*	padding-bottom: 15px; 
+	padding-top: 15px; */
+}
+#page-education{
+	padding-bottom: 25px;
+	padding-top: 25px;  
+}
+
+.black{
+	color: black; 
+}
+
+.col-6, .col-7{
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	text-align: left; 
+	padding-right: 15px; 
+	padding-left: 15px;
+}
+
+#page-experience{
+/*	padding-bottom: 15px;
+	padding-top: 15px; */ 
+}
+
+.col-3, .col-4, .col-5 {
+	box-sizing: border-box;
+	float: left;
+ /* width: 31.5%;*/
+	padding-right: 15px; 
+  	padding-left: 15px; 
+ 	width: 33.333333%;
+ 	text-align: left; 
+}
+
+.col-3{
+	/*padding-right: 29px; */
+}
+
+.col-4{
+	/*padding-right: 29px; */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#page-projects{
+	/*background: #f7f7f7;*/
+	padding-bottom: 25px; 
+	padding-top: 25px; 
+}
+
+#page-contact{
+
+}
+
+footer {
+	background-color: #3498db; 
+	text-align: center;
+	color: white;
+	padding: 15px; 
+}
+
+footer p{
+	margin: 0; 
+	color: white; 
+}
+
