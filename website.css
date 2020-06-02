@@ -1,3 +1,7 @@
+html{
+	scroll-behavior: smooth;  
+}
+
 body{
 	margin: 0;
 	/*font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;*/
@@ -8,9 +12,10 @@ body{
 	/*color: #757575; */
 }
 
-/*CREATING A NAVIGATION BAR*/
+
+/* CREATING A NAVIGATION BAR */
 .topnav { 
-	z-index: 9999; 
+  z-index: 9999; 
   width: 100%;
   /*height: 15px;*/
   background-color: #333;
@@ -20,7 +25,7 @@ body{
   position: fixed; 
   display: table;  
   padding-top: 7px; 
-  padding-bottom: 7px; 
+  padding-bottom: 7px;
 }
 
 /* Style the links inside the navigation bar */
@@ -33,6 +38,8 @@ body{
   padding: 30px;
   text-decoration: none;
   font-size: 18px;
+  letter-spacing: 2px; 
+  font-weight: bold; 
 }
 
 /* Change the color of links on hover */
@@ -47,11 +54,13 @@ body{
   color: white;
 }
 
-.topnav a:target {
+/*.topnav a:target {
   background-color: #3498db;
   color: white;
-}
+}*/
 
+
+/* LAYOUT OF HEADER SECTION AND ABOUT ME BUTTON */
 header {
 	/*background-color: #1560FB; */
 	text-align: center; 
@@ -59,23 +68,95 @@ header {
 
 header img {
 	width: 100%; 
-	height: 100%; 
-	/*border-radius: 150px; */
-	/*border: 5px solid #1560FB; */
+	background-size: cover;
+	/*height: 790px;*/
+	/*height: 100%; */
 }
+
+/*.headicons{
+	position: absolute;
+	float: center; 
+	color: #f2f2f2;
+	top: 95%;
+	text-align: center;
+	text-decoration: none;
+	font-size: 30px; 
+	padding: 15px; 
+}*/
+
+.head-container .hicons{
+	position: absolute;
+	top: 90%;
+	left: 42.5%;
+	display: inline-block;
+}
+
+.head-icon-1, .head-icon-2, .head-icon-3{
+  /*  width: 33.333333%;*/
+	float: left;
+    color: #f2f2f2;
+	font-size: 30px; 
+    text-decoration: none;
+ 	text-align: center;
+ 	box-sizing: border-box;
+ 	display: inline-block;
+ 	border-radius: 50%; 
+ 	border: 2px solid white;
+ 	padding: 5px; 
+ 	margin: 15px; 
+}
+
+.head-icon-1:hover, .head-icon-2:hover, .head-icon-3:hover{
+	background: white; 
+}
+ /* Style the links inside the navigation bar */
+.header-bttn a { 
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  vertical-align: center; 
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 3px; 
+}
+
+.header-bttn a:hover{
+  background-color: white; 
+  color: #3498db;
+}
+
+.head-container .header-bttn{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background: 0 0; /*#555;*/
+  color: white;
+  padding: 12px 0px;
+  cursor: pointer;
+  border: 3px solid white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.head-container img {
+  width: 100%;
+  height: auto;
+}
+
 
 .centered{
 	position: absolute;
-	top: 50%;
+	top: 45%;
  	left: 50%;
  	transform: translate(-50%, -50%);
 }
 
 .container {
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: auto;
-    margin-left: auto;
+	max-width: 1100px; 
+    margin: 0 auto;
    }
 
 .container .bttn{
@@ -99,45 +180,52 @@ header img {
   color: #3498db;
 }
 
-.bttn-2{
-	/*position: absolute;*/
-	background-color: #f7f7f7;
-	color: white;
-}
-
 .sectionheader {
     text-align: center;
 }
 
-/*name welcome page header*/
+/* WELCOME PAGE TEXT */
 header h1{
 	/*font-family: "San Francisco", "Helvetica Neue", sans-serif;*/
 	/*font-family: 'Oxygen', sans-serif;*/
 	font-size: 70px; 
 	color: white;
 	padding-top: 0px; 
-	padding-bottom: 25px; 
+	padding-bottom: 5px; 
+	margin-top: 50px; 
+	margin-bottom: 50px; 
 }
 
+header .subtitle{
+	font-size: 25px; 
+	font-family: 'Gupter', serif;
+	letter-spacing: 1.5px; 
+	font-weight: bold; 
+	color: white; 
+	width: 70%;
+	float: center; 
+	padding-bottom: 35px; 
+	margin: auto; 
+}
+
+/* LAYOUT OF WEBSITE BODY */
 main {
-	max-width: 1100px; 
-	text-align: center;
-	margin: 0 auto; 
-	/*padding: 20px; */
+	text-align: center; 
 }
 
+/* PROFILE PICTURE LAYOUT */
 main img {
 	max-width: 100%; 
 	width: 225px; 
 	height: 225px; 
 	border-radius: 150px; 
 	border: 5px solid #333; 
-	float:left;
+	/*float:left;*/
 	position: relative;
-	margin: 0 20px 20px 0;
+	/*margin: 0 20px 20px 0;*/
 }
 
-/*header of each section*/
+/* SECTION HEADERS */
 .sectiontitle{
     font-size: 2.5em;
     font-weight: 700;
@@ -156,7 +244,7 @@ h4{
 	margin: 10px; 
 }
 
-/*blue headings*/
+/* BLUE HEADINGS */
 h5{
 	color: #3498db; 
 	font-size: 22px; 
@@ -176,18 +264,14 @@ p{
 	/*font-family: 'News Cycle', sans-serif;*/
 	font-family: 'Gupter', serif;
 }
+
+/* LINK INFORMATION */
 a{
 	color: #3498db;
 }
 
 a:hover{
 	color: black;
-}
-
-div{
-/*	border-width: 1px; 
-	border-color: black; 
-	border-style: dashed; */
 }
 
 .spacer{
@@ -197,29 +281,24 @@ div{
     margin: auto;
 }
 
-.wide{
-	background: #f7f7f7;
-	margin: 0 -500%;
-	padding: 25px 500% 50px 500% !important;
-}
 
-.leftside, .rightside{
-	height: 100vh; 
-	width: 100%;
-
-}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* ABOUT ME COLUMNS */
 .col-1 {
   float: left;
-  width: 25%;
-  padding: 5px;
+  width: 35%;
+  padding: 30px 5px 5px 5px;
 }
 
 .col-2 {
   float: left;
-  width: 70%;
+  width: 65%;
   padding: 5px;
+  text-align: left; 
+}
+
+.col-1, .col-2{
+	margin: auto; 
+	box-sizing: border-box;
 }
 
 /* Clear floats after image containers */
@@ -229,37 +308,53 @@ div{
   display: table;
 }
 
-#info{
-	vertical-align: middle; 
-	text-align: left;
-}
-
-#picture{
-	padding-right: 40px; 
-}
-
-#picture, #info{
-	display: inline;
-}
 #page-about{
-	/*height: 70vh;*/ 
-	padding-bottom: 25px; 
+	padding-bottom: 50px; 
 	padding-top: 25px; 
+	padding-right: 20px; 
+	padding-left: 20px; 
 }
+
 #page-skills{
-	/*background: #f7f7f7;*/
-/*	padding-bottom: 15px; 
-	padding-top: 15px; */
+	background: #f7f7f7;
+	padding-bottom: 50px; 
+	padding-top: 25px; 
+	padding-right: 20px; 
+	padding-left: 20px; 
 }
+
+.col-CS, .col-lan, .col-tech{
+	box-sizing: border-box;
+	float: left;
+	padding-right: 15px; 
+  	padding-left: 15px; 
+ 	width: 33.333333%;
+ 	text-align: center; 
+}
+
+.iconify-1{
+	font-size: 85px; 
+	color: #555;
+	padding: 25px; 
+}
+
+
 #page-education{
-	padding-bottom: 25px;
-	padding-top: 25px;  
+	padding-bottom: 50px;
+	padding-top: 25px; 
+	padding-right: 20px; 
+	padding-left: 20px;  
 }
 
-.black{
-	color: black; 
+.col-10{
+	/*box-sizing: border-box;
+	float: center; */
+	width: 70%;
+	margin: auto; 
 }
 
+
+/* EDUCATION COLUMNS */
 .col-6, .col-7{
 	box-sizing: border-box;
 	float: left;
@@ -270,26 +365,22 @@ div{
 }
 
 #page-experience{
-/*	padding-bottom: 15px;
-	padding-top: 15px; */ 
+	background: #f7f7f7;
+	padding-bottom: 50px; 
+	padding-top: 25px; 
+	padding-right: 20px; 
+	padding-left: 20px; 
 }
 
+
+/* EXPERIENCE COLUMNS */
 .col-3, .col-4, .col-5 {
 	box-sizing: border-box;
 	float: left;
- /* width: 31.5%;*/
 	padding-right: 15px; 
   	padding-left: 15px; 
  	width: 33.333333%;
  	text-align: left; 
-}
-
-.col-3{
-	/*padding-right: 29px; */
-}
-
-.col-4{
-	/*padding-right: 29px; */
 }
 
 .row::after {
@@ -299,15 +390,108 @@ div{
 }
 
 #page-projects{
-	/*background: #f7f7f7;*/
-	padding-bottom: 25px; 
+	padding-bottom: 50px; 
 	padding-top: 25px; 
+	padding-right: 20px; 
+	padding-left: 20px; 
+}
+
+/* PROJECT COLUMNS */
+.col-8, .col-9{
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	/*text-align: center; */
+	padding-right: 15px; 
+	padding-left: 15px;
+	margin: auto;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 40%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.active{
+	background-color: red;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 
 #page-contact{
-
+	background: #f7f7f7;
+	padding-bottom: 50px; 
+	padding-top: 25px; 
+	padding-right: 20px; 
+	padding-left: 20px; 
 }
 
+
+/* CONTACT BUTTONS */
+.linkedin{
+	padding-left: 250px; 
+}
+
+.email{
+	padding-right: 250px; 
+}
+
+.github, .linkedin, .email {
+	box-sizing: border-box;
+	float: left;
+ 	width: 33.333333%;
+ 	text-align: center; 
+ 	vertical-align: center; 
+ 	font-size: 80px; 
+}
+
+.github a, .linkedin a, .email a{
+	color: #3498db; 
+}
+
+.github a:hover, .linkedin a:hover, .email a:hover {
+	color: #555;
+}
+
+.col-11, .col-12, .col-13 {
+	box-sizing: border-box;
+	float: left;
+ 	width: 33.333333%;
+ 	text-align: center; 
+ 	vertical-align: center; 
+ 	letter-spacing: 2px;
+ 	color: #555; 
+}
+
+.col-11{
+	padding-left: 250px; 
+}
+
+.col-13{
+	padding-right: 250px; 
+}
+
+
+/* FOOTER LAYOUT */
 footer {
 	background-color: #3498db; 
 	text-align: center;
