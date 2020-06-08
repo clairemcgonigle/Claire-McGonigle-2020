@@ -347,8 +347,6 @@ a:hover{
 }
 
 .col-10{
-	/*box-sizing: border-box;
-	float: center; */
 	width: 70%;
 	margin: auto; 
 }
@@ -362,6 +360,38 @@ a:hover{
 	text-align: left; 
 	padding-right: 15px; 
 	padding-left: 15px;
+}
+
+.collapsible2 {
+  /*background-color: #eee;*/
+  background-color: white; 
+  border: #ccc 2px solid; 
+  color: #3498db; 
+  font-size: 22px; 
+  letter-spacing: 1px; 
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible2:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content2 {
+  padding: 0 18px;
+  display: none;
+  margin: auto;
+  overflow: hidden;
+  /*max-height: 0;*/
+/*  transition: max-height 0.5s ease-out;*/
 }
 
 #page-experience{
@@ -409,15 +439,19 @@ a:hover{
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 40%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 15px;
+	background-color: white;
+ /* color: #444;*/
+    border: #ccc 2px solid;
+    color: #3498db; 
+    font-size: 20px; 
+    letter-spacing: 1px; 
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    text-align: center;
+    outline: none;
+  /*font-size: 15px;*/
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -425,16 +459,19 @@ a:hover{
   background-color: #ccc;
 }
 
-.active{
-	background-color: red;
-}
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;*/
+  width: 85%;
+  float: center; 
+  text-align: left;
+  margin: auto; 
+  /*max-height: 100%;
+  transition: 0.5s ease-out;*/
 }
 
 #page-contact{
