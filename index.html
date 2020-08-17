@@ -1,7 +1,14 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Claire McGonigle</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+	<!-- add bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 	<link rel="icon" type="image/jpeg" href="images/logo.png">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=News+Cycle&family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -9,60 +16,102 @@
 	<link rel="stylesheet" type="text/css" href="website.css">
 	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
+	<!-- more bootstrap for JS for collapsibles -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
 </head>
+
 <body>
 
-	<div class="topnav">
-  		<a href="#page-welcome">HOME</a>
-  		<a href="#page-about">ABOUT ME</a>
-  		<a href="#page-skills">SKILLS</a>
-  		<a href="#page-education">EDUCATION</a>
-  		<a href="#page-experience">EXPERIENCE</a>
-  		<a href="#page-resume">RESUME</a>
-  		<a href="#page-projects">CURRENT PROJECTS</a>
-  		<a href="#page-contact">CONNECT</a>
-	</div>
+	<nav class = "navbar navbar-expand-md">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                    <!--  <a class="navbar-brand" href="#">
+    					<img src="images/logo.png" width="30" height="30" class="d-inline-block align-center" alt="">
+  					</a> -->
+                     <li class="nav-item">
+                        <a class="nav-link" href="#page-welcome">HOME</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#page-about">ABOUT</a></a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#page-skills">SKILLS</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#page-resume">RESUME</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#page-education">EDUCATION</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#page-experience">EXPERIENCE</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#page-projects">PROJECTS</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#page-contact">CONNECT</a>
+                      </li>
+                </ul>
+              </div>
+        </nav>
 
 	<header>
 		<section id="page-welcome">
 
-			<div class ="head-container">
-				<img src="images/beach.JPG">
-				<button class="header-bttn">
-					<a href="#page-about">MORE ABOUT ME</a>
-				</button>
+			<header class="masthead">
+			  <div class="container h-100">
+			    <div class="row h-100 align-items-center">
+			      <div class="col-12 text-center">
+			        <h1><b>Hi, I'm Claire McGonigle<br><br></b></h1>
+			        <a class="btn header-bttn" href="#page-about" role="button"><p>ABOUT ME</p></a>
+					</button>
 
-				<header class="centered">
-					<h1><b>Hi, I'm Claire McGonigle</b></h1>
-					<div class="subtitle">Junior at Vanderbilt University majoring in Computer Science and Spanish</div>
-				</header>
+			        <div class="row">
+						<div class = "col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-sm-4 offset-sm-4">
+							<div class="head-icon-1">
+								<a href="https://www.linkedin.com/in/claire-mcgonigle-66aab218a/" target="_blank">
+									<span class="iconify" data-icon="ant-design:linkedin-outlined" data-inline="false"></span>
+								</a>
+							</div>
+							
+							<div class="head-icon-2">
+								<a href="mailto:claire.mcgonigle@vanderbilt.edu" rel = "noopener">
+									<span class="iconify" data-icon="clarity:email-line" data-inline="false"></span>
+								</a>
+							</div>
 
-				<div class="row">
-					<div class="hicons">
-						<div class="head-icon-1">
-							<a href="https://www.linkedin.com/in/claire-mcgonigle-66aab218a/" target="_blank">
-								<span class="iconify" data-icon="ant-design:linkedin-outlined" data-inline="false"></span>
-							</a>
+							<div class="head-icon-3">
+								<a href="https://github.com/clairemcgonigle" target="_blank">
+									<span class="iconify" data-icon="ion:logo-github" data-inline="false"></span>
+								</a>
+							</div>
 						</div>
-						<div class="head-icon-2">
-							<a href="mailto:claire.mcgonigle@vanderbilt.edu" rel = "noopener">
-								<span class="iconify" data-icon="clarity:email-line" data-inline="false"></span>
-							</a>
-						</div>
-						<div class="head-icon-3">
-							<a href="https://github.com/clairemcgonigle" target="_blank">
-								<span class="iconify" data-icon="ion:logo-github" data-inline="false"></span>
-							</a>
-						</div>
-					</div>
+			      </div>
 
-				</div>
+			    </div>
+
+			  </div>
+			</header>
 		</section>
 	</header>
 
 	<!-- main element  -->
 	<main>
-		<!-- information -->
+		<!-- INFORMATION -->
 		<section id="page-about" class="page-about">
 			<div class = "container">
 				<header class="sectionheader">
@@ -71,14 +120,14 @@
 				</header>
 
 				<div class="row">
-
-					<div class="col-1">
+					<div class = "col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-12">
 						<img src="images/profile_pic.png">
 					</div>
 
-					<div class="col-2">
+					<div class = "col-lg-6 col-md-6 col-sm-12">
 						<br>
-						<p>I am a rising junior at Vanderbilt University double majoring in Computer Science and Spanish with a minor in Political Science. </p><br>
+						<p>Hi, I'm Claire!<br>
+						I'm a junior at Vanderbilt University double majoring in Computer Science and Spanish. I will be graduating in May of 2022 with a Bachelor of Arts.</p><br>
 						<p>I'm an aspiring Software Engineer with a passion for problem solving and creating cool projects!</p><br>
 						<p>When not coding, I enjoy reading historical fiction and mystery novels, baking, painting, photography, and spending time with friends.</p>
 					</div>
@@ -97,25 +146,25 @@
 				<br>
 
 				<div class="row">
-					<div class="col-CS">
+					<div class = "col-lg-4 col-md-4 col-sm-12">
 						<div class="iconify-1">
 							<span class="iconify" data-icon="twemoji:laptop" data-inline="false"></span>
 						</div>
-						<p><b>Programming Languages: </b><br>Proficient in: C++, Java, Python <br>Working knowledge of: HTML & CSS, MATLAB</p>	
+						<p><b>Programming Languages: </b><br>Proficient in: C++, Java, Python <br>Working knowledge of: HTML & CSS, JavaScript, MATLAB</p>	
 					</div>
 
-					<div class="col-lan">
+					<div class = "col-lg-4 col-md-4 col-sm-12">
 						<div class="iconify-1">
 							<span class="iconify" data-icon="bx:bx-conversation" data-inline="false"></span>
 						</div>
 						<p><b>Languages: </b>English, Spanish</p>
 					</div>
 
-					<div class="col-tech">
+					<div class = "col-lg-4 col-md-4 col-sm-12">
 						<div class="iconify-1">
 							<span class="iconify" data-icon="ri:tools-fill" data-inline="false"></span>
 						</div>
-						<p><b>Technologies: </b>TensorFlow, Git, AutoCAD, Ganttic, Microsoft Programs</p>
+						<p><b>Technologies: </b>Git, React, Node, AutoCAD, Ganttic, Microsoft Programs</p>
 					</div>
 				</div>
 						
@@ -123,13 +172,16 @@
 					<br>
 					<br>
 					<p>View my full resumé below:</p>
-					<a href="file:///Users/clairemcgonigle/Downloads/McGonigle_Resume.pdf" target="_blank"><h5>RESUME</h5></a>
+					<a href=file:///Users/clairemcgonigle/Downloads/McGonigle_Resume.pdf target="_blank"><h5>RESUME</h5></a>
 				</section>
 				
 			</div>
+
 		</section>
 
-		<!-- education -->
+
+
+		<!-- EDUCATION -->
 		<section id="page-education">
 			<div class="container">
 		
@@ -141,58 +193,47 @@
 					<h4><strong>Vanderbilt University</strong></h4>
 						<p>Expected Bachelor of Arts in May of 2022</p>
 						<p>Double major in <b>Computer Science</b> and <b>Spanish</b></p>
-						<p>Minor in <b>Political Science</b> with a concentration in World Politics</p>
 						<p>GPA: 3.901 / 4.0</p>
 						<br>
 
 				<div class="row">
 
-					<div class="col-6">
-						<button type="button" class="collapsible2"><h5>View Courses</h5></button>
-							<div class="content2">
-								<p><b>CS Courses:</b><br> Programming and Problem Solving (CS 1101), Program Design and Data Structures (CS 2201), Discrete Structures (CS 2212), Intermediate Software Design (CS 3251), Algorithms (CS 3250), Digital Systems (EECE 2123)</p>
-								<br>
-								<p><b>Spanish Courses:</b><br> Intermediate Spanish Writing, Spanish for Oral Communication, Introduction to Spanish and Spanish-American Literature, Literature of the Spanish Golden Age, Topics in Hispanic Lit: Love and Death in Medieval Spain, Latin American Fiestas, Introduction to Spanish Linguistics
-								<br><br>
-								<p><b>Political Science Courses:</b><br> Introduction to International Politics, The American Presidency, Politics of Global Inequality, U.S. Elections</p>
-								<br>
-							</div>
+					<div class = "col-lg-6 col-md-6 col-sm-12">
+						
+						<button class="btn collapsible2" type="button" data-toggle="collapse" data-target="#content1" aria-expanded="false" aria-controls="content1"><h5>View Courses</h5></button>
+						<div class="collapse" id="content1">
+							<p><b>CS Courses:</b><br> Programming and Problem Solving (CS 1101), Program Design and Data Structures (CS 2201), Discrete Structures (CS 2212), Intermediate Software Design (CS 3251), Algorithms (CS 3250), Digital Systems (EECE 2123)</p>
+							<br>
+							<p><b>Spanish Courses:</b><br> Intermediate Spanish Writing, Spanish for Oral Communication, Introduction to Spanish and Spanish-American Literature, Literature of the Spanish Golden Age, Topics in Hispanic Lit: Love and Death in Medieval Spain, Latin American Fiestas, Introduction to Spanish Linguistics
+							<br><br>
+						</div>
 					</div>
 
-					<div class="col-7">
-						<button type="button" class="collapsible2"><h5>View Activities and Achievements</h5></button>
-							<div class="content2">
-								<p><b>Dean's List</b></p>
-								<br>
-								<p><b>Computer Science Teaching Assistant</b></p>
-								<p>Provide guidance and instruction to students during weekly office hours, grade and provide feedback on all class assignments and exams for 20 students per week, facilitate communication and function as a liaison between students and course professors.</p>
-								<br>
-								<p><b>Theta Tau Professional Engineering Fraternity</b></p>
-								<p><i>Brotherhood Chair</i></p>
-								<p>Participate in community service projects, professional development events, and brotherhood bonding activities.</p>
-								<br>
-								<p><b>Vanderbilt Code Ignite</b></p>
-								<p>Teach weekly lessons in computer programming to young students in the Nashville community, plan and teach engaging lessons to spark interest in computer science and STEM fields.</p>
-								<br>
-								<p><b>Women in Government Club</b></p>
-								<p>Organize, plan, and execute a ​Speaker Series with female elected officials and females in relevant career fields, perform outreach to speakers, publicize and coordinate the logistics of the event.</p>
-								<br>
-							</div>
+					<div class = "col-lg-6 col-md-6 col-sm-12">
+						<button class="btn collapsible2" type="button" data-toggle="collapse" data-target="#content2" aria-expanded="false" aria-controls="content2"><h5>View Activities and Achievements</h5></button>
+						
+						<div class="collapse" id="content2">
+							<p><b>Dean's List</b></p>
+							<br>
+							<p><b>Computer Science Teaching Assistant</b></p>
+							<p>Provide guidance and instruction to students during weekly office hours, grade and provide feedback on all class assignments and exams for 20 students per week, facilitate communication and function as a liaison between students and course professors.</p>
+							<br>
+							<p><b>Theta Tau Professional Engineering Fraternity</b></p>
+							<p><i>Brotherhood Chair</i></p>
+							<p>Participate in community service projects, professional development events, and brotherhood bonding activities.</p>
+							<br>
+							<p><b>Vanderbilt Code Ignite</b></p>
+							<p>Teach weekly lessons in computer programming to young students in the Nashville community, plan and teach engaging lessons to spark interest in computer science and STEM fields.</p>
+							<br>
+							<p><b>Women in Computing</b></p>
+							<p>Attend professional development events and ​programs on technical and career-oriented topics.</p>
+							<br>
+							<p><b>Women in Government Club</b></p>
+							<p>Organize, plan, and execute a ​Speaker Series with female elected officials and females in relevant career fields, perform outreach to speakers, publicize and coordinate the logistics of the event.</p>
+							<br>
+						</div>
 					</div>
 				</div>
-
-				<br>
-				<div class = "spacer"></div>
-				<br>
-
-				<h4><strong>McDonogh High School</strong></h4>
-					<p>August 2014 - June 2018</p>
-					<p>GPA: 4.57 / 4.0</p>
-					<br>
-
-					<div class="col-10">
-						<p><b>Activities and Achievements:</b> Cum Laude Society, FRC Robotics Team (Captain and Electronics Lead), Model United Nations, Tutoring Club, Varsity Golf (Captain), Varsity Squash, Junior Varsity Tennis</p>
-					</div>
 			</div>
 		</section>
 
@@ -207,19 +248,19 @@
 				</header>
 
 				<div class="row">
-					<div class="col-3">
+					<div class = "col-lg-4 col-md-12 col-sm-12">
 						<h5>Juni Learning</h5>
 						<p><i><b>Computer Science Instructor / May 2020 - Present</b></i></p>
 						<p>Teach weekly, one-on-one online coding classes to students remotely, working to inspire passion, creativity, and a love of Computer Science in young students. Classes consist of Java, Python, and AP Computer Science A curriculum.</p>
 					</div>
 
-					<div class="col-4">
+					<div class = "col-lg-4 col-md-12 col-sm-12">
 						<h5>Computer Science Teaching Assistant</h5>
 						<p><i><b>CS1101: Programming and Problem Solving / January 2020 - Present</b></i></p>
 						<p>Provide guidance and instruction to students during weekly office hours, grade and provide feedback on all class assignments and exams for 20 students per week, facilitate communication and function as a liaison between students and course professors.</p>
 					</div>
 
-					<div class="col-5">
+					<div class = "col-lg-4 col-md-12 col-sm-12">
 						<h5>Maryland General Assembly Intern</h5>
 						<p><i><b>Junior Legislative Intern to County Delegate / May 2019 - August 2019</b></i></p>
 						<p>Researched and compiled data to help create future legislation, attended workgroups and gathered community input for data analysis, planned, organized, and performed outreach for two conference meetings with 50+ attendees.</p>
@@ -241,29 +282,45 @@
 				</header>
 
 				<div class="row">
-					<div class="col-8">
-						<h4>Healthy Practices Chrome Website</h4>
-						<button type="button" class="collapsible">Learn More</button>
-							<div class="content">
-							  <p>I am part of a team currently working to develop a Chrome extension and website inspired by COVID-19, meant to promote healthy behaviors while spending long amounts of time online. It will include:<br><br> 
-							  1. A face-touching detector, that alerts you to avoid touching your face<br>
-							  2. A posture detector, that alerts you when you are sitting with bad posture<br>
-							  3. A reminder system, with personalizable reminders every so often to exercise, wash your hands, etc. <br>
-							  4. A workout posture detection algorithm, with notifications regarding whether you are doing the exercise correctly (push-ups, squats, planks)</p><br>
+					<div class = "col-lg-6 col-md-6 col-sm-12">
+						<h4>Healthy Habits.ai</h4>
+						<button class="btn collapsible" type="button" data-toggle="collapse" data-target="#content" aria-expanded="false" aria-controls="content"><h5>Learn More</h5></button>
+						<div class="collapse" id="content">
+						<!-- <button type="button" class="collapsible">Learn More</button> -->
 
-							  <p>View the <a href="https://github.com/gracegao72/SummerHacks" target="_blank">GitHub repository</a> to learn more.</p>
-							</div>
+						<!-- <div class="content"> -->
+							<p><br>A website inspired by COVID-19, meant to promote healthy behaviors while spending long amounts of time online. It includes:<br><br> 
+							1. A face-touching detector, that alerts you to avoid touching your face<br>
+							2. A posture detector, that alerts you when you are sitting with bad posture<br> <br>
+
+							It uses hand / face and posture detection through the webcam in real time to promote better hygiene and posture habits while online.<br><br>
+							Created during SummerHacks Hackathon using HTML, CSS, JavaScript, cvlib, TensorFlow, and Flask
+						
+
+							<br><br><p>View the <a href="https://github.com/gracegao72/SummerHacks-flask-ml" target="_blank">GitHub repository</a> to learn more.</p>
+						</div>
 					</div>
 
-					<div class="col-9">
-						<h4>Class Requirement Chrome Extension</h4>
-						<button type="button" class="collapsible">Learn More</button>
-							<div class="content">
-							  <p>A Chrome extension that adds the ability to see which requirements for a certain major each class fulfills within Vanderbilt's class search tool, YES. <br>Vandy ClassFinder aims to help Vanderbilt students easily find which requirements their classes fulfill from their specific major within the School of Engineering. <br>Users can select their major and view the requirements fulfilled by each class in their class cart from the extension pop-up.</p>
-							  <br><br>
-							  <p>View the <a href="https://github.com/AlexFeeley/Vandy-ClassFinder" target="_blank">GitHub repository</a> to learn more.</p>
+					<div class = "col-lg-6 col-md-6 col-sm-12">
+						<h4>Vandy Class Finder Chrome Extension</h4>
+
+						<!-- <button type="button" class="collapsible">Learn More</button> -->
+
+						<button class="btn collapsible" type="button" data-toggle="collapse" data-target="#content-VCF" aria-expanded="false" aria-controls="content-VCF"><h5>Learn More</h5></button>
+						<div class="collapse" id="content-VCF">
+						<!-- <div class="content"> -->
+							<p><br>A Chrome extension that adds the ability to see which requirements for a certain major each class fulfills within Vanderbilt's class search tool, YES. <br><br>
+
+							Vandy ClassFinder aims to help Vanderbilt students easily find which requirements their classes fulfill from their specific major within the School of Engineering. <br><br>
+
+							Users can select their major and view the requirements fulfilled by each class in their class cart from the extension pop-up.<br><br>
+							
+							Created during VandyHacks Summer Edition using JavaScript, HTML, CSS, and JSON</p>
+							<br>
+							
+							<p>View the <a href="https://github.com/AlexFeeley/Vandy-ClassFinder" target="_blank">GitHub repository</a> to learn more.</p>
 							 
-							</div>
+						</div>
 					</div>
 
 				</div>
@@ -282,38 +339,30 @@
 				</header>
 
 				<div class="row">
-					<div class="linkedin">
-						<a href="https://www.linkedin.com/in/claire-mcgonigle-66aab218a/" target="_blank">
-							<!-- <span class="iconify" data-icon="openmoji:linkedin" data-inline="false"></span> -->
-							<span class="iconify" data-icon="ant-design:linkedin-outlined" data-inline="false"></span>
-						</a>
+					<div class = "col-lg-2 offset-lg-3 col-md-2 offset-md-3 col-sm-2 offset-sm-3">
+						<div class="linkedin">
+							<a href="https://www.linkedin.com/in/claire-mcgonigle-66aab218a/" target="_blank">
+								<span class="iconify" data-icon="ant-design:linkedin-outlined" data-inline="false"></span>
+							</a>
+						</div>
 					</div>
 
-					<div class="github">
-						<a href="https://github.com/clairemcgonigle" target="_blank">
-							<span class="iconify" data-icon="ion:logo-github" data-inline="false"></span>
-						</a>
+					<div class = "col-lg-2 col-md-2 col-sm-2">
+						<div class="github">
+							<a href="https://github.com/clairemcgonigle" target="_blank">
+								<span class="iconify" data-icon="ion:logo-github" data-inline="false"></span>
+							</a>
+						</div>
 					</div>
 
-					<div class="email">
-						<a href="mailto:claire.mcgonigle@vanderbilt.edu" rel = "noopener">
-							<span class="iconify" data-icon="clarity:email-line" data-inline="false"></span>
-						</a>
+					<div class = "col-lg-2 col-md-2 col-sm-2">
+						<div class="email">
+							<a href="mailto:claire.mcgonigle@vanderbilt.edu" rel = "noopener">
+								<span class="iconify" data-icon="clarity:email-line" data-inline="false"></span>
+							</a>
+						</div>
 					</div>
 				</div>
-
-				<div class="row">
-					<div class = "col-11">
-						<p>LINKEDIN</p>
-					</div>
-					<div class = "col-12">
-						<p>GITHUB</p>
-					</div>
-					<div class = "col-13">
-						<p>EMAIL</p>
-					</div>
-				</div>
-
 			</div>
 		</section>
 
@@ -321,74 +370,47 @@
 	</main>
 
 	<footer>
-		<p> Designed and built by Claire McGonigle.  Last updated June 2020</p>
+		<p> Designed and built by Claire McGonigle.  Last updated August 2020</p>
 		<p>&copy; Claire McGonigle</p>
 	</footer>
 
 
 	<script type="text/javascript">
 
-		//var coll = document.getElementsByClassName("collapsible");
-		//  var i;
-
-		//  for (i = 0; i < coll.length; i++) {
-		//    coll[i].addEventListener("click", function() {
-		//      this.classList.toggle("active");
-		//      var content = this.nextElementSibling;
-		//      if (content.style.maxHeight){
-		//        content.style.maxHeight = null;
-		//      } else {
-		//        content.style.maxHeight = content.scrollHeight + "px";
-		//      } 
-		//    });
-		// }
-
-
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
-		  coll[i].addEventListener("click", function() {
-		    this.classList.toggle("active");
-		    var content = this.nextElementSibling;
-		    if (content.style.display === "block") {
-		      content.style.display = "none";
-		    } else {
-		      content.style.display = "block";
-		    }
-		  });
-		}
-
-		var coll = document.getElementsByClassName("collapsible2");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
-		  coll[i].addEventListener("click", function() {
-		    this.classList.toggle("active");
-		    var content = this.nextElementSibling;
-		    if (content.style.display === "block") {
-		      content.style.display = "none";
-		    } else {
-		      content.style.display = "block";
-		    }
-		  });
-		}
-
-
-		// var coll = document.getElementsByClassName("collapsible-2");
+		// var coll = document.getElementsByClassName("collapsible");
 		// var i;
 
 		// for (i = 0; i < coll.length; i++) {
 		//   coll[i].addEventListener("click", function() {
 		//     this.classList.toggle("active");
 		//     var content = this.nextElementSibling;
-		//     if (content.style.maxHeight){
-		//       content.style.maxHeight = null;
+		//     if (content.style.display === "block") {
+		//       content.style.display = "none";
 		//     } else {
-		//       content.style.maxHeight = content.scrollHeight + "px";
+		//       content.style.display = "block";
 		//     }
 		//   });
 		// }
+
+		// var coll = document.getElementsByClassName("collapsible2");
+		// var i;
+
+		// for (i = 0; i < coll.length; i++) {
+		//   coll[i].addEventListener("click", function() {
+		//     this.classList.toggle("active");
+		//     var content = this.nextElementSibling;
+		//     if (content.style.display === "block") {
+		//       content.style.display = "none";
+		//     } else {
+		//       content.style.display = "block";
+		//     }
+		//   });
+		// }
+
+
+		 <!-- bootstrap imports -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
 	</script>
 
 </body>

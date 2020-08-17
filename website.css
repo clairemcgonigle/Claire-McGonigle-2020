@@ -9,55 +9,74 @@ body{
 	font-family: 'Oswald', sans-serif;
 	font-size: 18px; 
 	line-height: 35px; 
+	max-width: 100%
 	/*color: #757575; */
 }
 
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('images/beach.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* CREATING A NAVIGATION BAR */
-.topnav { 
+.navbar { 
   z-index: 9999; 
   width: 100%;
-  /*height: 15px;*/
+  max-width: 100%;
   background-color: #333;
-  overflow: hidden;
-  text-align: center; 
   opacity: 0.85;
   position: fixed; 
-  display: table;  
-  padding-top: 7px; 
-  padding-bottom: 7px;
+  padding: 0px;
+}
+
+.navbar-collapse.in {
+    display: block !important;
+}
+
+.navbar-nav {
+	width: 100%;
+	padding-left: 15px; 
 }
 
 /* Style the links inside the navigation bar */
-.topnav a { 
-  /*display: table-cell;*/
-  float: center;
+.nav-link { 
   color: #f2f2f2;
-  text-align: center;
-  vertical-align: center; 
-  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-decoration: none;
   font-size: 18px;
   letter-spacing: 2px; 
   font-weight: bold; 
 }
 
+/*.navbar-brand {
+	vertical-align: center; 
+}
+
+.navbar-brand img {
+	padding: auto; 
+	vertical-align: center; 
+	height: 40px;
+	width: auto;
+	border-radius: 15%;
+	padding: auto; 
+}*/
+
 /* Change the color of links on hover */
-.topnav a:hover {
-  background-color: white; 
+.nav-link:hover {
+  /*background-color: white; */
   color: #3498db;
 }
 
 /* Add a color to the active/current link */
-.topnav a:active {
-  background-color: #3498db;
-  color: white;
+.navbar a:active {
+  /*background-color: #3498db;*/
+  color: violet;
 }
-
-/*.topnav a:target {
-  background-color: #3498db;
-  color: white;
-}*/
 
 
 /* LAYOUT OF HEADER SECTION AND ABOUT ME BUTTON */
@@ -73,79 +92,64 @@ header img {
 	/*height: 100%; */
 }
 
-/*.headicons{
-	position: absolute;
-	float: center; 
-	color: #f2f2f2;
-	top: 95%;
-	text-align: center;
-	text-decoration: none;
-	font-size: 30px; 
-	padding: 15px; 
-}*/
-
-.head-container .hicons{
-	position: absolute;
-	top: 90%;
-	left: 42.5%;
-	display: inline-block;
-}
-
 .head-icon-1, .head-icon-2, .head-icon-3{
-  /*  width: 33.333333%;*/
-	float: left;
-    color: #f2f2f2;
+    /*color: #f2f2f2;*/
+  color: white; 
 	font-size: 30px; 
-    text-decoration: none;
- 	text-align: center;
- 	box-sizing: border-box;
+  text-decoration: none;
+ 	/*border-radius: 50%; */
+ 	/*border: 2px solid white;*/
+ 	padding-left: 5px; 
+  padding-right: 5px; 
  	display: inline-block;
- 	border-radius: 50%; 
- 	border: 2px solid white;
- 	padding: 5px; 
- 	margin: 15px; 
+ 	float: center; 
 }
 
-.head-icon-1:hover, .head-icon-2:hover, .head-icon-3:hover{
-	background: white; 
+.head-icon-1 a, .head-icon-2 a, .head-icon-3 a {
+  color: white;
 }
+
  /* Style the links inside the navigation bar */
-.header-bttn a { 
+.header-bttn p { 
   float: center;
-  color: #f2f2f2;
+  /*color: #f2f2f2;*/
+  color: white;
   text-align: center;
   vertical-align: center; 
-  padding: 12px 24px;
+  padding: 10px 40px;
   text-decoration: none;
   font-size: 20px;
   font-weight: bolder;
   letter-spacing: 3px; 
 }
 
-.header-bttn a:hover{
+.header-bttn:hover{
+  background-color: white; 
+  /*color: #3498db;*/
+}
+
+.header-bttn:hover p{
   background-color: white; 
   color: #3498db;
 }
 
-.head-container .header-bttn{
+.header-bttn{
   position: absolute;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background: 0 0; /*#555;*/
-  color: white;
-  padding: 12px 0px;
+  background: 0 0;
   cursor: pointer;
-  border: 3px solid white;
+  border: 2px solid white;
   font-family: 'Oswald', sans-serif;
+  padding: 0px;
 }
 
 .head-container img {
   width: 100%;
   height: auto;
 }
-
 
 .centered{
 	position: absolute;
@@ -182,6 +186,7 @@ header img {
 
 .sectionheader {
     text-align: center;
+    padding-top: 50px;
 }
 
 /* WELCOME PAGE TEXT */
@@ -214,15 +219,17 @@ main {
 }
 
 /* PROFILE PICTURE LAYOUT */
-main img {
+#page-about img {
 	max-width: 100%; 
 	width: 225px; 
 	height: 225px; 
 	border-radius: 150px; 
-	border: 5px solid #333; 
+	/*border: 5px solid #333; */
 	/*float:left;*/
 	position: relative;
-	/*margin: 0 20px 20px 0;*/
+	/*margin: 50px 0 0 50px;*/
+	/*float: right; */
+	margin-top: 25px; 
 }
 
 /* SECTION HEADERS */
@@ -233,6 +240,7 @@ main img {
     text-align: center;
     color: #555;
     text-transform: uppercase;
+    padding-bottom: 25px; 
     /*line-height: 25px;*/
     /*padding: 20px 0;*/
 }
@@ -281,26 +289,6 @@ a:hover{
     margin: auto;
 }
 
-
-/* ABOUT ME COLUMNS */
-.col-1 {
-  float: left;
-  width: 35%;
-  padding: 30px 5px 5px 5px;
-}
-
-.col-2 {
-  float: left;
-  width: 65%;
-  padding: 5px;
-  text-align: left; 
-}
-
-.col-1, .col-2{
-	margin: auto; 
-	box-sizing: border-box;
-}
-
 /* Clear floats after image containers */
 .row::after {
   content: "";
@@ -308,8 +296,12 @@ a:hover{
   display: table;
 }
 
+.row {
+	margin: 0px; 
+}
+
 #page-about{
-	padding-bottom: 50px; 
+	padding-bottom: 70px; 
 	padding-top: 25px; 
 	padding-right: 20px; 
 	padding-left: 20px; 
@@ -317,19 +309,10 @@ a:hover{
 
 #page-skills{
 	background: #f7f7f7;
-	padding-bottom: 50px; 
+	padding-bottom: 70px; 
 	padding-top: 25px; 
 	padding-right: 20px; 
 	padding-left: 20px; 
-}
-
-.col-CS, .col-lan, .col-tech{
-	box-sizing: border-box;
-	float: left;
-	padding-right: 15px; 
-  	padding-left: 15px; 
- 	width: 33.333333%;
- 	text-align: center; 
 }
 
 .iconify-1{
@@ -340,26 +323,10 @@ a:hover{
 
 
 #page-education{
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 	padding-top: 25px; 
 	padding-right: 20px; 
 	padding-left: 20px;  
-}
-
-.col-10{
-	width: 70%;
-	margin: auto; 
-}
-
-
-/* EDUCATION COLUMNS */
-.col-6, .col-7{
-	box-sizing: border-box;
-	float: left;
-	width: 50%;
-	text-align: left; 
-	padding-right: 15px; 
-	padding-left: 15px;
 }
 
 .collapsible2 {
@@ -378,10 +345,14 @@ a:hover{
   font-size: 15px;
 }
 
-
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible2:hover {
   background-color: #ccc;
+}
+
+/*fix issue with collapse*/
+.collapse.in {
+    display: block !important;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -396,21 +367,10 @@ a:hover{
 
 #page-experience{
 	background: #f7f7f7;
-	padding-bottom: 50px; 
+	padding-bottom: 70px; 
 	padding-top: 25px; 
 	padding-right: 20px; 
 	padding-left: 20px; 
-}
-
-
-/* EXPERIENCE COLUMNS */
-.col-3, .col-4, .col-5 {
-	box-sizing: border-box;
-	float: left;
-	padding-right: 15px; 
-  	padding-left: 15px; 
- 	width: 33.333333%;
- 	text-align: left; 
 }
 
 .row::after {
@@ -420,21 +380,10 @@ a:hover{
 }
 
 #page-projects{
-	padding-bottom: 50px; 
+	padding-bottom: 70px; 
 	padding-top: 25px; 
 	padding-right: 20px; 
 	padding-left: 20px; 
-}
-
-/* PROJECT COLUMNS */
-.col-8, .col-9{
-	box-sizing: border-box;
-	float: left;
-	width: 50%;
-	/*text-align: center; */
-	padding-right: 15px; 
-	padding-left: 15px;
-	margin: auto;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -447,7 +396,7 @@ a:hover{
     letter-spacing: 1px; 
     font-family: 'Oswald', sans-serif;
     cursor: pointer;
-    padding: 18px;
+    padding: 10px;
     width: 60%;
     text-align: center;
     outline: none;
@@ -476,7 +425,7 @@ a:hover{
 
 #page-contact{
 	background: #f7f7f7;
-	padding-bottom: 50px; 
+	padding-bottom: 70px; 
 	padding-top: 25px; 
 	padding-right: 20px; 
 	padding-left: 20px; 
@@ -484,49 +433,20 @@ a:hover{
 
 
 /* CONTACT BUTTONS */
-.linkedin{
-	padding-left: 250px; 
-}
-
-.email{
-	padding-right: 250px; 
-}
-
 .github, .linkedin, .email {
-	box-sizing: border-box;
-	float: left;
- 	width: 33.333333%;
- 	text-align: center; 
+
  	vertical-align: center; 
  	font-size: 80px; 
 }
 
 .github a, .linkedin a, .email a{
 	color: #3498db; 
+	float: center; 
 }
 
 .github a:hover, .linkedin a:hover, .email a:hover {
 	color: #555;
 }
-
-.col-11, .col-12, .col-13 {
-	box-sizing: border-box;
-	float: left;
- 	width: 33.333333%;
- 	text-align: center; 
- 	vertical-align: center; 
- 	letter-spacing: 2px;
- 	color: #555; 
-}
-
-.col-11{
-	padding-left: 250px; 
-}
-
-.col-13{
-	padding-right: 250px; 
-}
-
 
 /* FOOTER LAYOUT */
 footer {
