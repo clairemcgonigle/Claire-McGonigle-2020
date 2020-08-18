@@ -329,6 +329,11 @@ a:hover{
 	padding-left: 20px;  
 }
 
+#page-education img {
+  width: 75px; 
+  height: 75px; 
+}
+
 .collapsible2 {
   /*background-color: #eee;*/
   background-color: white; 
@@ -373,6 +378,15 @@ a:hover{
 	padding-left: 20px; 
 }
 
+#page-experience a {
+  text-decoration: none; 
+}
+
+#page-experience img {
+  width: 25px; 
+  height: 25px;  
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -386,6 +400,26 @@ a:hover{
 	padding-left: 20px; 
 }
 
+#page-projects img {
+  height: 55px; 
+  width: 55px; 
+  border-radius: 50%; 
+}
+
+#page-projects #card {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  padding: 15px; 
+  background: #e8faff; 
+}
+
+#page-projects #card2 {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  padding: 15px; 
+  background: #e8faff; 
+}
+
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
 	background-color: white;
@@ -396,7 +430,7 @@ a:hover{
     letter-spacing: 1px; 
     font-family: 'Oswald', sans-serif;
     cursor: pointer;
-    padding: 10px;
+    padding: 0px;
     width: 60%;
     text-align: center;
     outline: none;
